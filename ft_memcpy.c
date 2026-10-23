@@ -6,7 +6,7 @@
 /*   By: ael-biya <marvin@42.fr>                   #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/16 11:00:03 by ael-biya         #+#    #+#              */
-/*   Updated: 2026/10/19 15:30:34 by ael-biya        ###   ########.fr        */
+/*   Updated: 2026/10/23 11:16:40 by ael-biya        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*
-int	main(void)
-{
-char	src[] = "hello";
-char	dest[10];
-
-ft_memcpy(dest, src, 3);
-printf("%s\n", dest);
-}
-*/
