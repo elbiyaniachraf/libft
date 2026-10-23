@@ -6,36 +6,33 @@
 /*   By: ael-biya <marvin@42.fr>                   #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 18:48:34 by ael-biya         #+#    #+#              */
-/*   Updated: 2026/10/21 18:50:16 by ael-biya        ###   ########.fr        */
+/*   Updated: 2026/10/23 12:30:53 by ael-biya        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	s1_len;
-	size_t	s2_len;
 	size_t	i;
-	char	*sub;
+	size_t	j;
+	char	*join;
 
-	if (!s1 || !s2)
+	if (!s1 || !s3)
 		return (NULL);
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
-	sub = malloc(s1_len + s2_len + 1);
-	if (!sub)
+	join = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!join)
 		return (NULL);
 	i = 0;
-	while (i < s1_len)
+	while (s1[i])
 	{
-		sub[i] = s1[i];
+		join[i] = s1[i];
 		i++;
 	}
-	i = 0;
-	while (i < s2_len)
+	j = 0;
+	while (s2[j])
 	{
-		sub[s1_len + i] = s2[i];
-		i++;
+		join[i + j] = s2[j];
+		j++;
 	}
-	sub[s1_len + s2_len] = '\0';
-	return (sub);
+	join[i + j] = '\0';
+	return (join);
 }
