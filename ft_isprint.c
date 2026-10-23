@@ -3,10 +3,10 @@
 /*                                                       :::      ::::::::    */
 /*   ft_isprint.c                                      :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: ael-biya <marvin@42.fr0>                  #+#  +:+       +#+         */
+/*   By: ael-biya <marvin@42.fr>                   #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/14 10:43:10 by ael-biya         #+#    #+#              */
-/*   Updated: 2026/10/19 12:38:03 by ael-biya        ###   ########.fr        */
+/*   Updated: 2026/10/23 11:23:44 by ael-biya        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-
-/*
-int	main(void)
-{
-printf("%d\n", ft_isprint('h'));
-printf("%d\n", ft_isprint('5'));
-printf("%d\n", ft_isprint('\n'));
-}
-*/
